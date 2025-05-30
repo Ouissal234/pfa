@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: white;
+  color: #0c1630;
+}
+
+/* Wrapper for header + hero */
+.top-section {
+  position: relative;
+  background-color: #0c1630;
+}
+
+/* White angled shape */
+.top-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 30%;
+  height: 100%;
+  background-color: white;
+  clip-path: polygon(95% 0, 100% 0, 100% 100%, 0% 100%);
+  z-index: 1;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  background-color: transparent;
+  position: relative;
+  z-index: 2;
+  color: white;
+}
+
+.nav-links a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+}
+
+.btn-outline {
+  padding: 10px 20px;
+  background: transparent;
+  border: 1px solid white;
+  border-radius: 25px;
+  color: white;
+  cursor: pointer;
+}
+
+/* Hero Section */
+.hero {
+  position: relative;
+  overflow: hidden;
+  min-height: 100vh;
+  background-color: transparent;
+  z-index: 2;
+}
+
+.hero-content {
+  display: flex;
+  position: relative;
+  z-index: 2;
+  padding: 80px 50px;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+}
+
+.hero-text {
+  flex: 1;
+  max-width: 50%;
+  position: relative;
+  z-index: 3;
+}
+
+.hero-text h5 {
+  color: #00ffe7;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.hero-text h1 {
+  font-size: 42px;
+  line-height: 1.4;
+  margin-bottom: 20px;
+}
+
+.hero-text p {
+  color: #cdd3e5;
+  margin-bottom: 30px;
+}
+
+.btn {
+  padding: 12px 28px;
+  background: #00ffe7;
+  color: #0c1630;
+  border: none;
+  border-radius: 25px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Hero Image */
+.hero-img {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 3;
+}
+
+.hero-img img {
+  width: 90%;
+  max-width: 500px;
+  position: relative;
+  z-index: 3;
+}
+
